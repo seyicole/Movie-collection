@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import {HashRouter, Route, Switch} from 'react-router-dom';
 import Header from '../elements/Header/Header';
 import NotFound from '../elements/NotFound/NotFound';
 import Home from '../Home/Home';
@@ -9,7 +9,7 @@ import Movie from '../Movie/Movie';
 const  App = () => {
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <React.Fragment>
             <Header />
             <Switch>
@@ -18,7 +18,7 @@ const  App = () => {
               <Route component={NotFound} />
             </Switch>
         </React.Fragment>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   )
 }
